@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784467239911",
+    "project_id": "riya-ca05a",
+    "storage_bucket": "riya-ca05a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784467239911:android:c93bf5cb0e12e34ca2d342",
+        "android_client_info": {
+          "package_name": "com.example.riya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuKKdyx-CeUXx_-Nur62P3Y-uyeIXKEiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

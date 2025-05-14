@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:padding="30dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Fine Container -->
+            <LinearLayout
+                android:id="@+id/fineContainer"
+                android:layout_width="219dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_background_with_stroke"
+                android:orientation="vertical"
+                android:padding="8dp" />
+
+            <!-- License Expiry Container -->
+            <LinearLayout
+                android:id="@+id/licenseExpiryContainer"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/white_background_with_stroke"
+                android:orientation="vertical"
+                android:padding="8dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@android:color/white">
+            <!-- Title: Sleep Detections Last 6 Hours -->
+            <TextView
+                android:id="@+id/sleepDetectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:text="Sleep Detections Last 6 Hours"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                android:textStyle="bold|italic" />
+
+
+            <!-- Horizontal LinearLayout for Vertical Line + Sleep Detection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Vertical Line -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="7dp"
+                    android:background="#941207" />
+
+                <!-- Sleep Detection Container -->
+                <LinearLayout
+                    android:id="@+id/sleepDetectionContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+
+            <!-- Welcome Text -->
+
+            <!-- Horizontal Layout for Image + Welcome Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="200dp">
+
+                <!-- Image Left to Welcome Back -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/driver_icon"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Welcome Back Text -->
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Back!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Buttons Section -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myDetailsButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/black"
+                android:text="View My Details"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myFinesButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/black"
+                android:text="View my fines"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emissionDetailsButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="View Emission Details Live"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

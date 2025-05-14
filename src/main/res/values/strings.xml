@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">riya</string>
+    <string name="title_activity_rolesectionactivity">Rolesectionactivity</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="title_activity_add_driver">AddDriverActivity</string>
+    <string name="title_activity_view_driver">ViewDriverActivity</string>
+    <string name="title_activity_add_driver_fines">AddDriverFines</string>
+    <string name="title_activity_user_dashboard">UserDashboardActivity</string>
+    <string name="title_activity_driver_details">DriverDetailsActivity</string>
+    <string name="title_activity_fine_details">FineDetailsActivity</string>
+    <string name="title_activity_emission_details">EmissionDetailsActivity</string>
+    <string name="title_activity_emission_details2">EmissionDetailsActivity2</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/officer_icon" />
+
+    <!-- Add New Driver Button -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Welcome Officer!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addDriverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Driver"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp" />
+
+    <!-- View Driver Details Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewDriverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Driver Details"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp" />
+    <!-- Add fines Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addFinesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Driver's Fines"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp" />
+</LinearLayout>
